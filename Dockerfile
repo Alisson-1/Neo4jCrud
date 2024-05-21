@@ -8,10 +8,10 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["Neo4J.csproj", "Neo4J/"]
+COPY ["Neo4J.csproj", "."]
 RUN dotnet restore "Neo4J.csproj"
 COPY . .
-WORKDIR "/src/Neo4J"
+WORKDIR /src
 RUN dotnet build "Neo4J.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
