@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "wXl9wFB8Qz1ERxBDpB5zXaZTJoEydcU70PmghjMyJP4=",
+  "Source": "Neo4J",
+  "BasePath": "_content/Neo4J",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
